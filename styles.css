@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-image: url('/imagens/img2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    cursor: crosshair;
+    overflow: hidden;
+}
+
+.header{
+    background: rgb(7, 7, 52);
+    color: white;
+    height: 40px;
+    align-items: center;
+}
+.header h2{
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    display:flex;
+}
+.bola {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:blue;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.footer{
+    background-color:rgb(7, 7, 52);
+    height: 50px;
+}
+
