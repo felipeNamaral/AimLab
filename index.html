@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clique no Quadrado</title>
     <link rel="stylesheet" href="styles.css">
+    <title>AimLab</title>
 </head>
 <body>
-    <header class="header">
-        <h5 class="temp" id="temp">tempo: <span id="tempo"></span></h5>
-        <h2>Acertos: <span id="acertos"></span></h2>
-    </header>
-
-
-
-   <div class="container" id="container">
-        <div class="bola" id="bola" onclick="troca()"></div>
-   </div>
-   <footer class="footer">
-    <button id="reset">reset</button>
-    <button id="telaCheia">Tela telaCheia</button>
-
-   </footer>
-    <script src="main.js"></script>
+    <div class="tela">
+        <h1>AimLab</h1>
+        <button class="btn" id="start">start</button>
+    </div>
+    <div class="tela">
+        <div class="estatus">
+           <div class="info">
+            <p>time: <span id="time">01:30</span></p>
+            <p>acertos: <span id="acertos">0</span></p>
+            <p>precisão: <span id="precisao">100%</span></p>
+           </div>
+        </div>
+        <div class="jogo" id="jogo">
+            <div class="bola" id="bola"></div>
+        </div>
+        <div class="opcoes">
+            <button class="btn restart">Restart</button>
+            <button class="btn cheia" id="telaCheia">full</button>
+        </div>
+    </div>
+    <div class="tela">
+        <h1>Fim de jogo</h1>
+        <div class="resultado">
+            <p>acertos: <span id="acertos_over">0</span></p>
+            <p>precisão: <span id="precisao_over">0</span></p>
+        </div>
+        <button class="btn restart">Restart</button>
+    </div>
+    <script src="scrypt.js"></script>
 </body>
 </html>
