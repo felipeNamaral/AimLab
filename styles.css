@@ -21,7 +21,7 @@ h1{
 
 .btn{
     color: white;
-    background-color: rgb(64, 121, 74);
+    background-color: #357226;
     border: none;
     border-radius: 20px;
     height: 50px;
@@ -31,8 +31,10 @@ h1{
     padding: 0.5rem 1rem;
 }
 .btn:hover{
-    background-color: rgb(64, 121, 34);
+    background-color: #a8dd9b;
 }
+
+
 .tela{
     display: flex;
     align-items: center;
@@ -42,13 +44,23 @@ h1{
     height: 100vh;
     width: 100vw;
     transition: margin 0.5s ease-in-out;
-    background-color: rgb(25, 62, 16);
+    background-color: #193e10;
 }
 
 .tela.up{
     margin-top: -100vh;
 }
 
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.list li{
+    margin: 10px;;
+}
 .estatus{
     display: flex;
     justify-content: center;
@@ -105,6 +117,15 @@ h1{
     }
 }
 
+.bola1,.bola2,.bola3{
+    position: absolute;
+    background-color: rgb(0, 119, 255);
+    border-radius: 50px;
+    /* width: 50px;
+    height: 50px; */
+    border: none;
+}
+
 .resultado{
     display: flex;
     align-items: center;
@@ -119,6 +140,26 @@ h1{
 .resultado p span{
     color: red;
     margin-left: 10px
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .estatus{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .estatus div{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
 }
 
 
