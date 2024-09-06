@@ -102,6 +102,7 @@ jogo.addEventListener('click', (e) => {
         acertos++;
         e.target.remove();
         createRandomBola();
+        audio.play();
     } else {
         erros++;
     }
@@ -235,7 +236,8 @@ jogo.addEventListener('click', (e) => {
     if (e.target.classList.contains('bola1')) {
         acertos++;
         e.target.remove();
-        createRandomBola1()
+        createRandomBola1();
+        audio.play();
     } else {
         erros++;
     }
@@ -251,6 +253,7 @@ jogo.addEventListener('click', (e) => {
         acertos++;
         e.target.remove();
         createRandomBola2();
+        audio.play();
     } else {
         erros++;
     }
@@ -263,6 +266,7 @@ jogo.addEventListener('click', (e) => {
     if (e.target.classList.contains('bola3')) {
         acertos++;
         e.target.remove();
+        audio.play();
         createRandomBola3();
     } else {
         erros++;
@@ -270,3 +274,7 @@ jogo.addEventListener('click', (e) => {
     acertosEl.innerHTML = acertos;
     calculatePrecisao();
 })
+
+
+    const audio = new Audio();
+    audio.src = "bolha.mp3";
