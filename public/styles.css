@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(/public/img/img2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 1.4;
+}
+
+.btn{
+    color: white;
+    background-color: #357226;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    cursor:pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+    .btn:hover{
+        background-color: #a8dd9b;
+    }
+
+
+.tela{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-in-out;
+    background-color: #193e10;
+}
+
+.tela.up{
+    margin-top: -100vh;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.list li{
+    margin: 10px;;
+}
+.estatus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px;
+}
+.estatus div{
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.estatus p span{
+    margin-left: 10px;
+    color: red;
+}
+
+
+.jogo{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+   flex: 1;
+   background-image: url(/img/img2.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   cursor: crosshair;
+}
+.opcoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.bola{
+    position: absolute;
+    background-color: rgb(0, 119, 255);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    animation: bola 2s linear forwards;
+    border: none;
+}
+
+@keyframes bola{
+    100%{
+        transform: scale(0);
+    }
+}
+
+.bola1,.bola2,.bola3{
+    position: absolute;
+    background-color: rgb(0, 119, 255);
+    border-radius: 50px;
+    /* width: 50px;
+    height: 50px; */
+    border: none;
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.resultado p{
+    font-size: 20px; 
+}
+.resultado p span{
+    color: red;
+    margin-left: 10px
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .estatus{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .estatus div{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
